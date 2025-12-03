@@ -1,0 +1,5 @@
+@ECHO OFF
+
+C:\Windows\Resources\Themes\10ThemeFor11_Light.theme
+
+DEL "%~f0"
