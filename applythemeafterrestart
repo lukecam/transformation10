@@ -1,5 +1,5 @@
 @ECHO OFF
 
 C:\Windows\Resources\Themes\10ThemeFor11_Light.theme
-
+REG IMPORT C:\Transformation10\EnableRealTime.reg
 DEL "%~f0"
