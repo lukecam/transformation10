@@ -7,6 +7,7 @@ cd /d "%~dp0" && ( if exist "%Temp%\getadmin.vbs" del "%Temp%\getadmin.vbs") && 
 
 C:\Windows\Resources\Themes\10ThemeFor11_Light.theme
 REG IMPORT C:\Transformation10\EnableRealTime.reg
+REG IMPORT C:\Transformation10\EPSettingsMod.reg
 
 C:\Transformation10\ep_setup.exe
 
