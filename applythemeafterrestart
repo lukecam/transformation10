@@ -1,5 +1,13 @@
 @ECHO OFF
 
+setlocal EnableDelayedExpansion
+set "Params=%*"
+cd /d "%~dp0" && ( if exist "%Temp%\getadmin.vbs" del "%Temp%\getadmin.vbs") && fsutil dirty query %SystemDrive% 1>nul 2>nul || ( echo set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && %~s0 %Params%", "", "runas", 1 >> "%Temp%\getadmin.vbs" && "%Temp%\getadmin.vbs" && Exit /b)
+
+
 C:\Windows\Resources\Themes\10ThemeFor11_Light.theme
 REG IMPORT C:\Transformation10\EnableRealTime.reg
+
+C:\Transformation10\ep_setup.exe
+
 DEL "%~f0"
